@@ -1,14 +1,8 @@
 ---
 layout: default
 ---
-<article>
+{% include slimheader.html %}
 
-  <header>
-    <h1>{{ page.title | escape }}</h1>
-  </header>
-
-  <section>
-    {{ content }}
-  </section>
-
-</article>
+<div class="page-container flex-grow-1 mt-5">
+  {{content}}
+</div>
