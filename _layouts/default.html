@@ -5,13 +5,11 @@
 
   <body>
 
-    {%- include header.html -%}
+    {% include {{ page.header | default: "slimheader.html" }} %}
 
-    <div class="py-5">
-      <div class="container page-content">
+      <div class="container-fluid page-content">
           {{ content }}
       </div>
-    </div>
 
     {%- include footer.html -%}
 
