@@ -1,5 +1,5 @@
 <div class="currency" style="background-image:url(./assets/img/currencies/{{include.currency}}.svg)">
-  <h3>{{include.currency | upcase }}</h3>
+  <h3>{% include currencyname.html currency=include.currency %}</h3>
   <div class="statistics">
     <div class="stats-table">
       <div class="stats-row">
