@@ -6,7 +6,7 @@ layout: home
 ## Supported currencies
 
 
-<div class="currencies">
+<div class="currencies container">
     {% for currency in site.data.stats.currencies %}
 
     {% assign curr = currency[0] %}

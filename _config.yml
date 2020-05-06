@@ -21,6 +21,7 @@ version: "0.4.2"
 #twitter_username: jekyllrb
 #github_username:  jekyll
 
+repository: "graphsense/graphsense.github.io"
 repo: "https://github.com/graphsense"
 
 # Build settings
