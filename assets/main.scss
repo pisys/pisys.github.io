@@ -298,6 +298,10 @@ ul.contributors li {
 .nav-item .nav-link {
   position: relative;
   z-index: 1;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .nav-item .nav-link-shadow {
