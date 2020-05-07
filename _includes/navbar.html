@@ -1,7 +1,10 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
   <div class="container">
-    <a class="navbar-brand" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-
+    <div class="navbar-brand">
+      {% if page.layout == "page" %}
+      <a href="/"><img style="height:45px" src="{{ "assets/img/logo.svg" | relative_url }}"/></a>
+      {% endif %}
+    </div>
     {%- assign page_paths = site.header_pages -%}
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,15 +15,15 @@
         {%- for path in page_paths -%}
           {%- assign my_page = site.pages | where: "path", path | first -%}
           {%- if my_page.title -%}
-          <li class="nav-item">
-            <a class="nav-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+          <li class="nav-item position-relative">
+            <a class="nav-link text-right" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+            <div class="nav-link-shadow">
+            </div>
           </li>
           {%- endif -%}
         {% endfor -%}
-        <li class="nav-item">
-          <a class="nav-link" href="{{ site.github.repository_url }}">Fork me on Github</a>
-        </li>
       </ul>
     </div>
   </div>
 </nav>
+
