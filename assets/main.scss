@@ -297,7 +297,7 @@ ul.contributors li {
 
 .nav-item .nav-link {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   text-decoration: none;
   &:hover {
     text-decoration: underline;
@@ -313,7 +313,7 @@ ul.contributors li {
   height: 50%;
   position: absolute;
   top: 18%;
-  z-index: 0;
+  z-index: 1;
   right: -2%;
 }
 
