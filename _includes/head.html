@@ -1,6 +1,7 @@
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-72523087-1"></script>
+  {% if jekyll.environment == "production" %}
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -8,6 +9,7 @@
 
     gtag('config', 'UA-72523087-1');
   </script>
+  {% endif %}
   <!-- Site head -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
