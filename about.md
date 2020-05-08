@@ -7,15 +7,4 @@ GraphSense is a cryptocurrency analytics research platform, developed under the 
 
 GraphSense is provided as Open Source software, under the terms of the MIT license. It can be downloaded free of charge for self-hosting from our GitHub repository.
 
-The Austrian Institute of Technology offers free access to a hosted version of the software at demo.graphsense.info in the spirit of open source and as an act of collegiality. Please refer to our Terms and Conditions of Use for information.
-
-## Imprint
-
-This service is hosted at the
-
-AIT Austrian Institute of Technology GmbH<br/>
-Giefinggasse 4<br/>
-1210 Vienna<br/>
-Austria<br/>
-
-Contact the AIT Data Protection Officer via [dpo@ait.ac.at](mailto:dpo@ait.ac.at)
+The Austrian Institute of Technology offers free access to a hosted version of the software at [demo.graphsense.info](https://demo.graphsense.info) in the spirit of open source and as an act of collegiality. Please refer to our Terms and Conditions of Use for information.

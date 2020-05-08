@@ -2,18 +2,24 @@
 layout: home
 ---
 
+<div class="container mt-3">
+  <p class="lead text-center">
+    GraphSense is a cryptocurrency analytics platform with the emphasis on full data sovereignty, algorithmic transparency, and scalability. GraphSense is open source and free. It provides a dashboard for interactive investigations and, more importantly, full data access for running advanced analytics tasks.
+  </p>
+</div>
 
 ## Supported currencies
 
-
 <div class="currencies container">
-    {% for currency in site.data.stats.currencies %}
 
+  <p class="mb-2">GraphSense supports major cryptocurrencies like Bitcoin, Bitcoin Cash, Litecoin, and Zcash as well as other UTXO model currencies.</p>
+
+  {% for currency in site.data.stats.currencies %}
     {% assign curr = currency[0] %}
     {% assign stats=currency[1] %}
+    {% include currency.html currency=curr stats=stats %}
+  {% endfor %}
 
-        {% include currency.html currency=curr stats=stats %}
-    {% endfor %}
 </div>
 
 ## Features
@@ -33,18 +39,11 @@ layout: home
 ## Publications
 
 <div class="container">
-  <p>Some more technical details about GraphSense are described <a href="http://ceur-ws.org/Vol-1695/paper20.pdf">here</a>; please cite as:</p>
 
-  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@inproceedings{Haslhofer:2016a,
-    title={O Bitcoin Where Art Thou? Insight into Large-Scale Transaction Graphs.},
-    author={Haslhofer, Bernhard and Karl, Roman and Filtz, Erwin},
-    booktitle={SEMANTiCS (Posters, Demos)},
-    year={2016}
-  }
-  </code></pre></div></div>
+  <p>GraphSense has already been used in several scientific studies to evaluate cryptocurrency data.</p>
 
-  <p>So far, GraphSense has been used for computing statistics in the following
-  scientific papers:</p>
+  <p>Stütz, R., Gaži, P., Haslhofer, B., & Illum, J. (2020). <strong>Stake shift in major cryptocurrencies: An empirical study.</strong> Financial cryptography and data security (FC 2020).
+  <a href="https://arxiv.org/abs/2001.04187">(pdf)</a></p>
 
   <p>Paquet-Clouston, M., Romiti, M., Haslhofer, B., Charvat, T.
   <strong>Spams meet Cryptocurrencies: Sextortion in the Bitcoin Ecosystem</strong>
@@ -67,8 +66,22 @@ layout: home
   <a href="https://aic.ai.wu.ac.at/~polleres/publications/filtz-etal-2017IDSC.pdf">(pdf)</a></p>
 </div>
 
+## Citation
 
-## Contributors
+<div class="container">
+  <p>Some more technical details about GraphSense are described <a href="http://ceur-ws.org/Vol-1695/paper20.pdf">here</a>; please cite as:</p>
+
+  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@inproceedings{Haslhofer:2016a,
+    title={O Bitcoin Where Art Thou? Insight into Large-Scale Transaction Graphs.},
+    author={Haslhofer, Bernhard and Karl, Roman and Filtz, Erwin},
+    booktitle={SEMANTiCS (Posters, Demos)},
+    year={2016}
+  }
+  </code></pre></div></div>
+</div>
+
+
+## Core Team
 
 <ul class="contributors container d-flex flex-row flex-wrap m-auto justify-content-around">
   <li><img src="{{ "/assets/img/bh.jpeg" | relative_url }}"/><a href="http://bernhardhaslhofer.info/">Bernhard Haslhofer</a></li>
