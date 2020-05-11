@@ -33,3 +33,7 @@ This release provides a number of bug fixes, enhancements, and minor features.
 #### Back-end Infrastructure
 
 * Build and run components using [Docker Compose](https://docs.docker.com/compose/)
+
+* Upgrade to Scala 2.12, Spark 2.4.5
+
+* Reintegration of clustering library into transformation
