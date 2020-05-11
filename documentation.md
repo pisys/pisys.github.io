@@ -4,7 +4,7 @@ title: Documentation
 
 ## Hardware Requirements
 
-GraphSense can process hundreds of millions transactions from several ledgers and is therefore built on-top of [Apache Spark](spark) and [Cassandra](cassandra).
+GraphSense can process hundreds of millions transactions and is therefore built on-top of [Apache Spark](spark) and [Cassandra](cassandra), which are highly scalable computing and analytics infrastructures.
 
 In our production environment we use a Apache Spark/Cassandra cluster with the following Hardware components:
 
@@ -30,11 +30,11 @@ If you want to setup the entire GraphSense platform, please follow this order:
 
 3. Use the [graphsense-tagpack-tool](https://github.com/graphsense/graphsense-tagpack-tool) for validating TagPacks and ingesting them into a dedicated Cassandra keyspace. You can use our [public TagPack collection](https://github.com/graphsense/graphsense-tagpacks) or your own, possibly private one.
 
-4. After having ingested transaction data, exchange rates, and TagPacks into a *raw* Cassandra keyspace, you can now run the [graphsense-transformation](https://github.com/graphsense/graphsense-transformation) pipeline, which computes all sorts of statistics and various types of Graph abstractions and stores them in a so-called *transformed* keyspace. Running the transformation pipeline is quite resource intensive and can, depending your hardware infrastructure, take some time.
+4. After having ingested transaction data, exchange rates, and TagPacks into a *raw* Cassandra keyspace, you can now run the [graphsense-transformation](https://github.com/graphsense/graphsense-transformation) pipeline, which computes all sorts of statistics and various types of Graph abstractions and stores them in a so-called *transformed* keyspace. Running the transformation pipeline is a resource intensive task and can, depending your hardware infrastructure, take some time.
 
 5. Having both a *raw* and *transformed* Cassandra in place, you can now run the [graphsense-REST](https://github.com/graphsense/graphsense-REST) against these keyspaces. This will expose the GraphSense REST API, which you can use in your client app.
 
-6. Finally, when the REST interface is up and running, you can the [graphsense-dashboard][https://github.com/graphsense/graphsense-dashboard], which relies on the REST interface, and provides an interactive analytics interface.
+6. Finally, when the REST interface is up and running, you can setup the [graphsense-dashboard](https://github.com/graphsense/graphsense-dashboard), which relies on the REST interface, and provides an interactive analytics interface.
 
 ## Frequently Asked Questions
 
@@ -56,7 +56,7 @@ Just drop an email to [contact@graphsense.info](mailto:contact@graphsense.info) 
 
 **Q: Who is behind GraphSense and who is driving development?**
 
-GraphSense has a strong research background and development is mainly driven by GraphSense core team (see [About](about.html)). Members of this team are mostly scientists and engineers working for [AIT's Data Science and Artificial Intelligence Research Group](https://www.ait.ac.at).
+GraphSense has a strong research background and development is mainly driven by GraphSense core team (see [About](about.html)). Members of this team are mostly scientists and engineers working for [AIT's Data Science and Artificial Intelligence Research Group](https://www.ait.ac.at/themen/data-science/).
 
 **Q: Who is funding GraphSense?**
 
