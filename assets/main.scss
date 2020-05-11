@@ -142,7 +142,7 @@ svg.slash path {
 
 .landingpage h2 {
   font-family: Conv_Octarine-Bold;
-  padding-top: 0;
+  padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   width: 100%;
   text-align: center;
@@ -152,35 +152,7 @@ svg.slash path {
   margin-top: 1.5rem;
 }
 
-.currencies {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .currency {
-  min-height: 100px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 100%;
- 
-  @include media-breakpoint-up(md) {
-    width: 50%;
-  }
-
-  @include media-breakpoint-up(lg) {
-    width: 33%;
-  }
-
-  @include media-breakpoint-up(xl) {
-    width: 25%;
-  }
-  padding-bottom: 1rem;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-  margin-bottom: 1.25rem;
-
   h3 {
     font-family: Conv_Octarine-Light;
     @extend .text-3xl;
@@ -198,6 +170,13 @@ svg.slash path {
     display: flex;
     justify-content: center;
     padding: 1rem;
+  }
+
+  img {
+    width: 100%;
+    @include media-breakpoint-up(xl) {
+      width: 50%;
+    }
   }
 }
 
@@ -259,7 +238,6 @@ ul.features li {
   @extend .d-flex; 
   @extend .flex-column; 
   @extend .align-items-center;
-  @extend .px-5; 
   @extend .mb-4; 
   @extend .text-center;
   width: 100%;
@@ -301,6 +279,9 @@ ul.contributors li {
   text-decoration: none;
   &:hover {
     text-decoration: underline;
+  }
+  i {
+    width: 1em;
   }
 }
 

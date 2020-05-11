@@ -10,21 +10,24 @@ layout: home
 
 ## Supported currencies
 
-<div class="currencies container">
+<div class="container">
 
-  <p class="mb-2">GraphSense supports major cryptocurrencies like Bitcoin, Bitcoin Cash, Litecoin, and Zcash as well as other UTXO model currencies.</p>
+  <p class="mb-5">GraphSense supports major cryptocurrencies like Bitcoin, Bitcoin Cash, Litecoin, and Zcash as well as other UTXO model currencies.</p>
 
-  {% for currency in site.data.stats.currencies %}
-    {% assign curr = currency[0] %}
-    {% assign stats=currency[1] %}
-    {% include currency.html currency=curr stats=stats %}
-  {% endfor %}
+  <div class="row">
 
+    {% for currency in site.data.stats.currencies %}
+      {% assign curr = currency[0] %}
+      {% assign stats=currency[1] %}
+      {% include currency.html currency=curr stats=stats %}
+    {% endfor %}
+
+  </div>
 </div>
 
 ## Features
 
-<ul class="features d-flex flex-row flex-wrap w-100">
+<ul class="container features d-flex flex-row flex-wrap w-100">
 {% for feature in site.data.features %}
     <li><i class="{{feature.collection | default: "fa" }} fa-{{ feature.icon }}"></i> <strong>{{ feature.heading }}</strong> <div>{{ feature.text }}</div></li>
 {% endfor %}
