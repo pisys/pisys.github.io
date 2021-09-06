@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Company
 ---
 
 GraphSense is a cryptoasset analytics research platform, developed under the leadership of the Austrian Institute of Technology, with funding from the Austrian Research Promotion Agency's KIRAS program (Projects [VIRTCRIME](https://virtcrime-project.info/){:target="_blank"} and [KRYPTOMONITOR](https://kryptomonitor-project.info/){:target="_blank"}) and the European Union's Horizon 2020 research innovation program (Project [TITANIUM](https://titanium-project.eu){:target="_blank"}.
